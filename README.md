@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Form Builder
 
-## Getting Started
+This project is a simple form builder created using Next.js and React.  
+It includes four fields: Name, Age, Email, and Phone Number, along with full validation and display of submitted data.
 
-First, run the development server:
+## Features
+- Name, Age, Email, Phone Number fields
+- Custom validation
+- Error messages shown below each field
+- Submitted data displayed on same page
+- Reset and Submit buttons
+- Uses React Context API
+- No third-party form libraries
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Validation Rules
+### Name
+- Required  
+- Only letters allowed  
+- Min length: 3  
+- Max length: 25  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Age
+- Required  
+- Only numbers allowed  
+- Between 1 and 120  
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Email
+- Required  
+- Must be valid email format  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Phone Number
+- Required  
+- Only digits  
+- Exactly 10 digits  
 
-## Learn More
+## Tech Stack
+- Next.js 16 (App Router)
+- React 19
+- JavaScript
+- Context API
+- CSS
 
-To learn more about Next.js, take a look at the following resources:
+## Snapshots
+<img width="1919" height="877" alt="image" src="https://github.com/user-attachments/assets/7109b714-dab8-4ed5-803b-b2b50ba428b4" />
+<img width="1919" height="934" alt="image" src="https://github.com/user-attachments/assets/9e51b472-f7c3-4b20-99e4-cbaf51965e1f" />
+<img width="1911" height="841" alt="image" src="https://github.com/user-attachments/assets/b314ad4b-cd30-4619-9cd1-3298431ce732" />
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
